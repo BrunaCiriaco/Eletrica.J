@@ -1,0 +1,163 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-6');
+
+body {
+    margin: 0;
+    min-width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../img/Group13.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.logo {
+    margin: 14px 15px 20px 98px;
+}
+
+.opt {
+    height: 76px;
+    background-color: #FBAF17;
+    border-radius: 150px 0px 0px 150px;
+    display: flex;
+    padding-left: 27px;
+    margin-top: -9px;
+    align-items: center;
+}
+
+.btn {
+    color: #202332;
+    font-family: 'Gotham';
+    font-size: 18px;
+    line-height: normal;
+}
+
+button#dropdownMenuButton {
+    color: black;
+    background: none;
+    border: none;
+}
+
+
+
+.land-page {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    height: 800px;
+    width: 100%;
+    background: url('../img/Rectangle29.png');
+}
+
+.textos {
+    color: #FFFF;
+    font-family: Gotham;
+    min-width: 50%;
+}
+
+.imgs {}
+
+.moca {
+    z-index: 2;
+    position: relative;
+}
+
+.group19 {
+    margin: 170px 0px 0px -148px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+.group15 {
+    margin: 528px -256px 0px 0px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 412px) {
+    .opt {
+        display: none;
+    }
+
+    .menu {
+        background: none;
+    }
+
+    .land-page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 400px;
+    }
+
+    .textos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: center;
+        font-family: Gotham;
+    }
+
+    .text-sobre {
+        font-size: 15px;
+        font-family: Gotham;
+        margin-bottom: 36px;
+    }
+
+    .imgs {
+        display: none;
+    }
+
+    .btn-produto {
+        text-align: center;
+        font-family: Gotham;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 38px;
+        letter-spacing: -0.54px;
+        border-radius: 15px;
+        background: #FBAF17;
+        border: none;
+        margin-left: 39px;
+        box-shadow: 2px 0px 30px #FBAF17;
+        width: 300px;
+    }
+
+    .btn-sobre {
+        text-align: center;
+        font-family: Gotham;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 38px;
+        letter-spacing: -0.54px;
+        border-radius: 15px;
+        background: none;
+        margin-left: 39px;
+        width: 300px;
+        margin-top: 20px;
+        color: #FFFF;
+        border: 1px solid;
+    }
+
+
+
+
+
+}
