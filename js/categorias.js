@@ -55,7 +55,7 @@ for (const produtoId in categorias) {
   const categoria = categorias[produtoId][0];
 
   const cardCategoria = document.createElement("div");
-  cardCategoria.classList.add("card-categoria");
+  cardCategoria.classList.add("card-categoria-items");
 
   cardCategoria.innerHTML = `
   <div class="card">
@@ -63,8 +63,7 @@ for (const produtoId in categorias) {
         <div class="img-categoria">
          <img class="altera-tamanho" src="${categoria.img}" alt="${categoria.tipo}">
         </div>
-       
-        </div>
+  </div>
     `;
 
   tipoProdutos.appendChild(cardCategoria);

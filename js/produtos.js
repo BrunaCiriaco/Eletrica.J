@@ -87,7 +87,7 @@ for (const produtoId in listaProduto) {
   const produto = listaProduto[produtoId][0];
 
   const cardProduto = document.createElement("div");
-  cardProduto.classList.add("card-produto");
+  cardProduto.classList.add("card-produto-items");
 
   cardProduto.innerHTML = `
         <p class="tipo-prduto">${produto.tipo}</p>
