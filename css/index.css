@@ -669,7 +669,7 @@ button#dropdownMenuButton {
 .group3302 {
     position: relative;
     z-index: 1;
-    left: 40%;
+    left: 30%;
     bottom: 38%;
     width: 20%;
 }
@@ -934,8 +934,7 @@ button#dropdownMenuButton {
         float: left;
         height: 91%;
         text-align: center;
-        margin-top: 40px;
-        left: 41px;
+
 
     }
 }
@@ -1273,4 +1272,6 @@ button#dropdownMenuButton {
         display: block;
         right: 110px;
     }
+
+
 }
