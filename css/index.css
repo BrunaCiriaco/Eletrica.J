@@ -6,6 +6,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    height: 100%;
+}
+
+.topnav {
+    display: none;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -16,17 +27,61 @@ body {
 }
 
 .logo {
-    margin: 14px 15px 20px 98px;
+    margin: 10px 0px 17px 261px;
+    width: 200px;
 }
 
 .opt {
-    height: 76px;
+    height: 105px;
     background-color: #FBAF17;
     border-radius: 150px 0px 0px 150px;
     display: flex;
     padding-left: 27px;
     margin-top: -9px;
     align-items: center;
+    z-index: 4;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 54px;
+    border-radius: 43px;
+    border-top-left-radius: 0px;
+    border-right-width: 11px;
+}
+
+.dropdown-item {
+    display: flex;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    align-items: center;
+}
+
+.icon-menu {
+    background: #fbaf17;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    padding: 20px;
+    float: left;
+}
+
+.tx-menu {
+    position: relative;
+    text-align: center;
+    float: left;
+    left: 30px;
+    font-weight: bold;
+    display: flex;
 }
 
 .btn {
@@ -36,19 +91,22 @@ body {
     line-height: normal;
 }
 
+.btn:hover {
+    border-bottom: 2px solid #FFF;
+
+}
+
 button#dropdownMenuButton {
     color: black;
     background: none;
     border: none;
 }
 
-
-
 .land-page {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    display: flex;
+    display: block;
     height: 800px;
     width: 100%;
     background: url('../img/Rectangle29.png');
@@ -57,7 +115,12 @@ button#dropdownMenuButton {
 .textos {
     color: #FFFF;
     font-family: Gotham;
-    min-width: 50%;
+    width: 33%;
+    float: left;
+    height: 100%;
+    padding: 10% 0% 0% 8%;
+    text-align: left;
+    font-size: 20px;
 }
 
 .btn-produto {
@@ -93,107 +156,806 @@ button#dropdownMenuButton {
     border: 1px solid;
 }
 
-.imgs {}
+.dropdown {
+    display: block;
+    margin: 20px;
+    color: #FFFF;
+    left: 60px;
+}
+
+.dropdown a {
+    color: #FFFF;
+    text-decoration: none;
+
+}
+
+.imgs {
+    color: #FFFF;
+    font-family: Gotham;
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: -304px;
+}
 
 .moca {
     z-index: 2;
     position: relative;
+    width: 71%;
 }
 
 .group19 {
-    margin: 170px 0px 0px -148px;
     opacity: 0.8;
+    float: right;
     position: relative;
     z-index: 1;
+    top: 318px;
+    right: 269px;
 }
 
 .group15 {
-    margin: 528px -256px 0px 0px;
     opacity: 0.8;
     position: relative;
     z-index: 1;
+    float: left;
+    bottom: 271px;
 }
 
-@media (max-width: 700px) {
+.clasificacao {
+    background: #FFFF;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 20px;
+    position: relative;
+    bottom: 150px;
+    right: 144px;
+}
+
+#produtos {
+    height: 100%;
+    width: 100%;
+
+}
+
+.retangulo {
+    margin: 20px 0px 0px 90px;
+    background: #202332;
+    width: 80%;
+    height: 456px;
+
+}
+
+.group27 {
+    position: relative;
+    left: 530px;
+    bottom: 20px;
+}
+
+.group32 {
+    position: relative;
+    top: 20px;
+    left: 465px;
+    z-index: -1;
+    width: 16%;
+}
+
+.title-produto {
+    color: #FFF;
+    font-size: 20px;
+    position: relative;
+    top: 138px;
+    right: 71px;
+    font-size: 30px;
+}
+
+
+
+
+.lis-produto {
+    position: relative;
+    bottom: 186px;
+    width: 100%;
+    display: flex;
+    margin-left: 0px;
+}
+
+
+
+
+.card-produto {
+    float: left;
+    padding: 33px;
+}
+
+
+
+.info-produto {
+    width: 263px;
+    height: 212px;
+    border-radius: 0px 0px 15px 15px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+.tipo-prduto {
+    font-family: Gotham;
+    font-size: 13px;
+    z-index: 1;
+    position: relative;
+    padding: 5px;
+    background: #E0E0E0;
+    width: 200px;
+    border-radius: 0px 20px 20px 0px;
+    top: 61px;
+    font-weight: bolder;
+}
+
+.retangulo-produto {
+    left: 26px;
+    width: 217px;
+    position: relative;
+    height: 19px;
+    border-radius: 15px;
+    background: #202332;
+    margin-bottom: -9px;
+
+
+}
+
+.nome-produto {
+    padding-top: 24px;
+    color: #333;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 23px;
+    width: 100%;
+    height: 90px;
+}
+
+.valores {
+    display: flex;
+    width: 100%;
+}
+
+.desconto-produto {
+    min-width: 50%;
+    color: #202332;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.48px;
+    text-decoration: line-through;
+}
+
+.valor-produto {
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    width: 250px;
+    color: var(--dark-gray, #333);
+    font-family: Gotham;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    background: #FBAF17;
+}
+
+.parcela-produto {
+    margin-top: 32px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px 15px 0px 0px;
+    background: #F7F7F7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    color: var(--dark-gray, #333);
+    text-align: center;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.48px;
+    margin-left: 30px;
+}
+
+.categoria {
+
+    width: 100%;
+    position: relative;
+
+}
+
+.retangulo-categoria {
+    height: 456px;
+    border-radius: 0px 15px 0px 0px;
+    background: #202332;
+}
+
+.title-categira {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.05px;
+    position: relative;
+    bottom: 28px;
+
+}
+
+.card-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -119px;
+    justify-content: space-around;
+}
+
+.card {
+    background: none;
+    display: flex;
+    margin-top: 133px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    height: 300px;
+}
+
+.tipo-categoria {
+    float: right;
+    color: #FBAF17;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.66px;
+}
+
+.img-categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    height: 258px;
+    flex-shrink: 0;
+    border-radius: 70px;
+    background: linear-gradient(180deg, #FBAF17 0%, #FBA017 100%);
+}
+
+.group2701 {
+
+    position: relative;
+    left: 37%;
+    top: 4px;
+
+}
+
+.sobre {
+    width: 100%;
+    height: 800px;
+    background: #F7F7F7;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.title-sobre {
+    width: 100%;
+    height: 25px;
+    flex-shrink: 0;
+    color: #202332;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.05px;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.group2702 {
+    left: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    margin-top: 140px;
+    height: 593px
+}
+
+.img-sobre {
+    min-width: 50%;
+    float: left;
+    margin-left: -75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt-sobre {
+    min-width: 50%;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    left: 10%;
+
+}
+
+.txt {
+    margin-top: -27px;
+    width: 415px;
+    flex-shrink: 0;
+    color: #333;
+    font-family: Gotham;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    position: relative;
+    letter-spacing: -0.54px;
+    left: 92px;
+}
+
+.btn-saiba {
+    width: 360px;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #202332;
+    color: #FFF;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+    border: none;
+    margin-left: 108px;
+}
+
+.img-card {
+    width: 100%;
+}
+
+.retagulo-azul {
+    height: 329px;
+    background: var(--azul-mais-escuro, #202332);
+    position: relative;
+    flex-shrink: 0;
+    z-index: 0;
+    top: 43px;
+    border-radius: 15px;
+}
+
+.edit-sobre {
+    float: right;
+    position: relative;
+    z-index: 1;
+    bottom: 358px;
+    width: 82%;
+    left: 89px;
+}
+
+.retagulo-amerelo {
+    width: 307px;
+    height: 513px;
+    border-radius: 15px;
+    background: #FBAF17;
+    left: 250px;
+    position: relative;
+    bottom: 428px;
+}
+
+
+.icon-like {
+    position: relative;
+    bottom: 32pc;
+    left: 11pc;
+    z-index: 2;
+    background: #FFF;
+    height: 66px;
+    width: 64px;
+    text-align: center;
+    border: 6px solid #FBAF17;
+    border-radius: 50%;
+}
+
+.contato {
+    margin-top: 10pc;
+    width: 100%;
+    height: 381px;
+    background: url(../img/Rectangle43.png);
+}
+
+.pessoa-contato {
+    position: relative;
+    bottom: 72px;
+    z-index: 1;
+}
+
+.group33 {
+    position: relative;
+    z-index: 1;
+    left: 136px;
+}
+
+.rodape {
+    width: 100%;
+    height: 273px;
+    background: #202332;
+    flex-shrink: 0;
+}
+
+.logo-rodape {
+    float: left;
+    min-width: 50%;
+    margin-top: 43px;
+}
+
+.textos-rodape {
+    display: flex;
+    width: 360px;
+    height: 45px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    margin-left: 136px;
+    margin-top: 30px;
+    letter-spacing: -0.8px;
+}
+
+.rede {
+    float: right;
+    height: 80px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.textos-red {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    font-family: Gotham;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.8px;
+    margin-bottom: 0px;
+}
+
+.icon-rede {
+
+    position: relative;
+    text-align: center;
+    right: 7%;
+
+}
+
+.icon {
+    margin: 0px 13px;
+}
+
+.group3302 {
+    position: relative;
+    z-index: 1;
+    left: 40%;
+    bottom: 38%;
+    width: 20%;
+}
+
+
+
+@media (max-width: 1000px) {
     .topnav {
         display: none;
     }
 
+    .menu {
+        background: none;
+    }
+
     .logo {
-        margin: 0px 30px 0px 170px;
+        margin: 0px 69px 6px 24px;
+
     }
 
     .opt {
-        padding-left: 20px;
+        height: 93px;
+        padding-left: 1px;
+        width: 100%;
     }
 
     .land-page {
         display: block;
-        height: 800px;
-        width: 884px;
+        width: 100%;
     }
 
     .textos {
-        padding: 58px;
+        width: 100%;
+        height: 50%;
     }
 
-    .imgs {
-        justify-content: flex-end;
-        display: flex;
-        align-items: start;
+    .dropdown {
+        color: #FFFF;
+        text-decoration: none;
+        left: 0;
+        text-align: center;
+    }
+
+
+    .edite {
+        margin-top: 25px;
+        position: relative;
+        right: 136px;
     }
 
     .moca {
         top: -9px;
-        width: 300px;
+        width: 255px;
     }
 
     .group19 {
-        opacity: 0.8;
-        position: relative;
-        z-index: 1;
-        margin-top: 150px;
-        left: 50%;
+        left: -6%;
+        z-index: 0;
     }
 
     .group15 {
-        right: 41%;
-        bottom: 200px;
+        right: 21%;
+        bottom: 278px;
+        width: 187px;
     }
 
     .clasificacao {
-        align-self: center;
-        background: #FFFF;
-        padding: 20px;
-        z-index: 2;
-        border-radius: 20px;
         position: relative;
-        right: 242px;
-        top: 60px;
+        bottom: 300px;
+        right: 7px;
+    }
+
+    #produtos {
+        height: 100%;
+        width: 70%;
+    }
+
+    .retangulo {
+        height: 300px;
+        width: 100%;
+    }
+
+    .group27 {
+        position: relative;
+        left: 230px;
+        top: 0;
+    }
+
+    .title-produto {
+        color: #FFF;
+        font-size: 20px;
+        position: relative;
+        top: 138px;
+        right: 71px;
+    }
+
+    .group32 {
+        top: 90px;
+        left: 165px;
+    }
+
+    .lis-produto {
+        justify-content: center;
+        position: relative;
+        top: -79px;
+        width: 140%;
+        margin-left: 0px;
+    }
+
+    .card-produto {
+        float: left;
+        padding: 33px;
+    }
+
+
+
+    .info-produto {
+        width: 263px;
+        height: 212px;
+        border-radius: 0px 0px 15px 15px;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        display: block;
+    }
+
+    .tipo-prduto {
+        font-family: Gotham;
+        font-size: 13px;
+        z-index: 1;
+        position: relative;
+        padding: 5px;
+        background: #E0E0E0;
+        width: 200px;
+        border-radius: 0px 20px 20px 0px;
+        top: 61px;
+        font-weight: bolder;
+    }
+
+    .retangulo-produto {
+
+        width: 217px;
+        position: relative;
+        height: 19px;
+        border-radius: 15px;
+        background: #202332;
+        margin-bottom: -9px;
+
+
+    }
+
+    .nome-produto {
+        padding-top: 24px;
+        color: #333;
+        text-align: center;
+        font-family: Gotham;
+        font-size: 23px;
+        width: 100%;
+        height: 80px;
+    }
+
+    .valores {
+        display: flex;
+        width: 100%;
+    }
+
+    .desconto-produto {
+        min-width: 50%;
+        color: #202332;
+        text-align: center;
+        font-family: Gotham;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: -0.48px;
+        text-decoration: line-through;
+    }
+
+    .valor-produto {
+        text-align: center;
+        border-radius: 15px 0px 0px 15px;
+        width: 250px;
+        color: var(--dark-gray, #333);
+        font-family: Gotham;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: -0.6px;
+        background: #FBAF17;
+    }
+
+    .parcela-produto {
+        margin-top: 32px;
+        width: 200px;
+        height: 30px;
+        border-radius: 15px 15px 0px 0px;
+        background: #F7F7F7;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        color: var(--dark-gray, #333);
+        text-align: center;
+        font-family: Gotham;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: -0.48px;
+        margin-left: 32px;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        margin-top: 204px;
+        height: 70pc;
+        position: relative;
+        right: 1pc;
+    }
+
+    .img-sobre {
+        min-width: 0%;
+        width: 37%;
+    }
+
+    .retagulo-azul {
+        height: 26%;
+    }
+
+    .retagulo-amerelo {
+        width: 50%;
+        height: 71%;
+        margin-top: 178px;
+    }
+
+    .edit-sobre {
+        position: relative;
+        bottom: 121px;
+    }
+
+    .contato {
+        height: 181px;
+    }
+
+    .pessoa-contato {
+        height: 140%;
+    }
+
+    .group33 {
+        height: 91%;
+    }
+
+    .rodape {
+        display: block;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .rede {
+        position: relative;
+        float: left;
+        height: 91%;
+        text-align: center;
+        margin-top: 40px;
+        left: 41px;
+
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+
     .opt {
         display: none;
     }
 
     .logo {
-        margin: 4px 0px -18px 141px;
+        margin: 0;
+        position: relative;
+        left: 40%;
     }
 
     .topnav {
         display: block;
     }
 
-    .menu {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        background: none;
-    }
 
     .menu>li {
         margin: 0 1rem;
@@ -306,6 +1068,7 @@ button#dropdownMenuButton {
         flex-direction: column;
         text-align: center;
         height: 400px;
+        width: auto;
 
     }
 
@@ -340,6 +1103,7 @@ button#dropdownMenuButton {
         margin-left: 39px;
         box-shadow: 2px 0px 30px #FBAF17;
         width: 300px;
+        align-self: center;
     }
 
     .btn-sobre {
@@ -357,6 +1121,7 @@ button#dropdownMenuButton {
         margin-top: 20px;
         color: #FFFF;
         border: 1px solid;
+        align-self: center;
     }
 
     .dropdown {
@@ -370,14 +1135,9 @@ button#dropdownMenuButton {
         color: #ffffff;
     }
 
-    #produtos {
-        width: 100%;
-        height: 400px;
-    }
 
     .retangulo {
-        margin: 20px 0px 0px 90px;
-        background: #202332;
+        margin: 10px 100px;
         height: 150px;
         border-radius: 20px 0px 0px 20px;
     }
@@ -386,12 +1146,26 @@ button#dropdownMenuButton {
         margin-left: 192px;
     }
 
+    .title-produto {
+        display: flex;
+        font-size: 18px;
+        font-family: Gotham;
+        top: 4px;
+        left: 171px;
+        width: 100%;
+    }
+
+    .group32 {
+        display: none;
+    }
+
     .lis-produto {
-        text-align-last: center;
+        margin-left: 0px;
     }
 
     .card-produto {
-        text-align: -webkit-center;
+        float: none;
+        text-align: center;
     }
 
 
@@ -414,21 +1188,17 @@ button#dropdownMenuButton {
         background: #E0E0E0;
         width: 200px;
         border-radius: 0px 20px 20px 0px;
-        right: 32px;
         top: 61px;
         font-weight: bolder;
     }
 
     .retangulo-produto {
-
         width: 217px;
         position: relative;
         height: 19px;
         border-radius: 15px;
         background: #202332;
-        margin-bottom: -9px;
-
-
+        left: 30px;
     }
 
     .nome-produto {
@@ -461,7 +1231,7 @@ button#dropdownMenuButton {
         text-align: center;
         border-radius: 15px 0px 0px 15px;
         width: 250px;
-        color: var(--dark-gray, #333);
+        color: #333;
         font-family: Gotham;
         font-size: 20px;
         font-style: normal;
@@ -478,7 +1248,7 @@ button#dropdownMenuButton {
         border-radius: 15px 15px 0px 0px;
         background: #F7F7F7;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-        color: var(--dark-gray, #333);
+        color: #333;
         text-align: center;
         font-family: Gotham;
         font-size: 16px;
@@ -486,5 +1256,21 @@ button#dropdownMenuButton {
         font-weight: 400;
         line-height: 38px;
         letter-spacing: -0.48px;
+        margin-left: 32px;
+    }
+
+    .title-sobre {
+        position: relative;
+        left: -27px;
+    }
+
+    .img-sobre {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        right: 110px;
     }
 }

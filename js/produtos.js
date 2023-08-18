@@ -52,7 +52,7 @@ const listaProduto = {
   6: [
     {
       tipo: "Acessórios",
-      img: "../img/produtos/acessotio.png",
+      img: "../img/produtos/acessorio.png",
       nome: "Lustre suspenso rústico",
       desconto: "R$ 120,00",
       value: "R$ 100,00",
@@ -69,7 +69,7 @@ const listaProduto = {
       parcela: "",
     },
   ],
-  6: [
+  8: [
     {
       tipo: "Acessórios",
       img: "../img/produtos/espelhoTomada.png",
